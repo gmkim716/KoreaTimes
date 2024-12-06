@@ -1,7 +1,4 @@
-"use client";
-
 import { VoteData2, VoteDataItem } from "@/types/types";
-import styled from "@emotion/styled";
 import MemberItem from "./VoteBoard/MemberItem";
 
 /**
@@ -10,50 +7,32 @@ import MemberItem from "./VoteBoard/MemberItem";
  * -[v] 국회의원들의 목록, 투표 현황
  * -[v] 이름 클릭 시 해당 국회의원 상세 페이지로 이동
  */
-type VoteBoardProps = {
-  voteData: VoteData2;
-};
 
 export default function VoteBoard({ voteData }: VoteBoardProps) {
   const {
-    agenda,
-    date,
+    agenda = "",
+    date = "",
     stats = { total: 0, attend: 0, agree: 0, disagree: 0, abstention: 0 },
-    dataset,
+    dataset = [],
   } = voteData;
-  const { total, attend, agree, disagree, abstention } = stats;
 
   return (
     <VoteBoard.Container>
       <VoteBoard.Agenda text={agenda} time={date} />
-      <VoteBoard.Stats
-        total={total}
-        attend={attend}
-        agree={agree}
-        disagree={disagree}
-        abstention={abstention}
-      />
+      <VoteBoard.Stats stats={stats} />
       <VoteBoard.MemberList dataset={dataset} />
     </VoteBoard.Container>
   );
 }
 
-type ContainerProps = {
-  children: React.ReactNode;
-};
-const Container = ({ children }: ContainerProps) => {
+const Container = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="p-4 bg-[var(--vote-board-background-color)] text-gray-100">
       {children}
     </div>
   );
 };
-
-type AgendaProps = {
-  text: string;
-  time?: string;
-};
-const Agenda = ({ text, time }: AgendaProps) => {
+const Agenda = ({ text, time }: { text: string; time?: string }) => {
   return (
     <h1 className="text-3xl font-bold text-center p-4 ">
       {text} ({time})
@@ -61,29 +40,22 @@ const Agenda = ({ text, time }: AgendaProps) => {
   );
 };
 
-type StatsProps = {
-  total: number;
-  attend: number;
-  agree: number;
-  disagree: number;
-  abstention: number;
-};
-const Stats = ({ total, attend, agree, disagree, abstention }: StatsProps) => {
+const Stats = ({ stats }: StatsProps) => {
+  const { total, attend, agree, disagree, abstention } = stats;
   return (
-    <ul className="grid grid-cols-5 gap-4 p-4 list-none border-4 border-[var(--vote-board-border-color)]">
-      <li>{total}</li>
-      <li>{attend}</li>
-      <li>{agree}</li>
-      <li>{disagree}</li>
-      <li>{abstention}</li>
+    <ul className="grid grid-cols-5 gap-4 p-4 list-none border-4 border-[var(--vote-board-border-color)] text-center text-2xl">
+      <StatsItem value={total} />
+      <StatsItem value={attend} />
+      <StatsItem value={agree} />
+      <StatsItem value={disagree} />
+      <StatsItem value={abstention} />
     </ul>
   );
 };
-
-type MemberListProps = {
-  dataset: VoteDataItem[];
+const StatsItem = ({ value }: { value: number }) => {
+  return <li>{value} 인</li>;
 };
-const MemberList = ({ dataset }: MemberListProps) => {
+const MemberList = ({ dataset }: { dataset: VoteDataItem[] }) => {
   return (
     <ul className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
       {dataset.map((member: VoteDataItem) => (
@@ -91,6 +63,19 @@ const MemberList = ({ dataset }: MemberListProps) => {
       ))}
     </ul>
   );
+};
+
+type VoteBoardProps = {
+  voteData: VoteData2;
+};
+type StatsProps = {
+  stats: {
+    total: number;
+    attend: number;
+    agree: number;
+    disagree: number;
+    abstention: number;
+  };
 };
 
 VoteBoard.Container = Container;
