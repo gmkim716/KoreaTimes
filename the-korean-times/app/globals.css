@@ -7,10 +7,27 @@
   --foreground: #171717;
 
   /* 국회 전광판 */
-  --board-background-color: #1d1e17;
+  --vote-board-background-color: #1d1e17;
+  --vote-board-border-color: #3d384d;
   --positive: #06fe43;
   --negative: #e45072;
   --neutral: #f0f0f0;
+  --abstension: #fff907;
+
+  /* 국회 휘장 */
+  --assembly-dark-brown: #580009;
+  --assembly-medium-brown: ##a86914;
+  --assembly-light-brown: #cea557;
+  --assembly-dark-blue: #0d2b80;
+  --assembly-blue: #0d2b80;
+  --assembly-sky-blue: ##5b9ac7;
+  --aseembly-emerald-green: #4bb698;
+  --assembly-grey: #505557;
+
+  /* 임시 색상 */
+  --bg-gradient-navbar: linear-gradient(45deg, #202020, #3a3a3a);
+  --temp-grey-1: #202020;
+  --temp-grey-2: #3a3a3a;
 }
 
 @media (prefers-color-scheme: dark) {

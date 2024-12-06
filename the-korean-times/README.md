@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chater 1. Summary
 
-## Getting Started
+### Selling Point
 
-First, run the development server:
+- 대한민국 국민의 한 일원으로써 국가의 방향을 결정하는 정치기관에 관심을 가질 필요성이 있다
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 뉴스/이슈가 있을 때마다 관심을 갖기위해 노력하지만 이념보다는 정쟁갈등이 더욱 부각되며 정치에 실망으로 마무리하게 된다
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 유튜브 알고리즘, 댓글 부대의 활동으로 인해 여론이 갖는 순기능이 퇴색되고 있다(고 생각)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### So, How?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 국회에서 논의중인 정책안을 보기좋게 전달하고, 찬/반의 의견 포인트를 수렴해보자
 
-## Learn More
+- 미디어의 홍수 속에서 자신의 의견을 확립해보자
 
-To learn more about Next.js, take a look at the following resources:
+- 한국 정치(역사/개념)에 대해 학습하고, 자주국민의 개념을 만들어보자
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Chapter 2. 고민 포인트
 
-## Deploy on Vercel
+## 최우선 과제
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**`개발욕심이 뿜뿜일 때 최대한 빠르게 기능부터 만든다`**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 기획 단계 (idea)
+
+### 꼭 있어야 할 기능
+
+- 회의 : 법안 소개, 결과(찬/반 여부)
+
+- 국회의원 상세 페이지 : 관련 키워드, 정책안, 관련 기사 :: 과거 이력보다 국회의원으로서의 업무 성과를 중심으로
+
+- 여론 조사 : 찬/반 투표, 댓글 :: AI, 댓글부대의 활동 감지 및 차단
+
+- 빅데이터 조사 : 사용자의 동작을 db에 기록 eg. OOO 의원의 상세 페이지 클릭 -> 카운트
+
+- 검색 데이터 조사 : 의원, 법안 등 사용자의 관심사를 기록 :: 검색버튼을 눌렀을 때의 데이터 저장
+
+#### cf. 행정부 / 사법부는 언젠가 추가해보도록 하자. 고로 프로젝트 범위에서 일단 제외
+
+### 실명제 도입이 가능할까? => ai 댓글입력이 들어오는 상황을 방지하려면?
+
+1. 자체 로그인 구현 x
+
+2. 소셜 로그인 적극 활용
+
+3. 댓글 남길 때 실명, 입력 시간 공개
+
+4. 의심 게시물 신고 -> 빠른 검증 방식 도입
+
+## 구현 단계 (dev)
+
+### Next vs React
+
+- `SEO 도입`이 효과를 발휘할 수 있는가? o, `검색엔진 최적화`의 이점
+
+- `SSG 지원`이 도움이 되는가? O, `자주 업데이트 되지 않는 화면`
+
+- 풀스택 개발이 가능한가? O, 개인 프로젝트 구현속도 영향
+
+### 차트 라이브러리는 무엇을 사용해야 할까
+
+1. D3js: 훌륭한 퀄리티, 커스터마이징 필요, svg 방식으로 그려냄, 다양한 데이터 시각화 도구 제공, html 기반, github 108.7k
+
+2. Chartjs: javascript 기반, 이벤트가 어느정도 모듈화 -> 빠른 구현 가능, github 64.9k
+
+3. Reachart: react 최적화 차트 라이브러리, github 24.2k
+
+### 어떤 상태관리 라이브러리가 가장 효율적일까
+
+1. react-query & SWR : API 중심의 데이터 동기화가 중요한가? : x (일단은 아님 / 로그인 필요)
+
+2. zustand vs recoil vs Jotai : 비슷해보이는데 선호도의 차이인가? : 선호 기업의 채용공고에 zustand를 사용, 두 상태관리를 deep dive 해본 적은 없었으므로 zustand를 사용해보기로 결정
+   ( zustand 로고가 더 귀여워.. )
+
+#### zustand: 하나의 스토어, 중앙 집중형 활용
+
+# Chapter 3. 추가 기획하면 좋을 것들
+
+- 위원회 구성
+
+- 뉴스 이슈 실시간 연동
+
+- 유튜브 영상 발언을 텍스트로 변환해서 상세 기록으로 남긴다(?)
+
+- donate, coffeeChat
+
+# 알게 된 사실

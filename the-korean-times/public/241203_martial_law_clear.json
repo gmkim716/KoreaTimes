@@ -1,0 +1,620 @@
+{
+  "agenda": "계엄령 해제 요구 결의안",
+  "date": "2024-12-03 00:00:00",
+  "total": 300,
+  "attend": 190,
+  "dataset": [
+    {
+      "hgNm": "강대식",
+      "vote": ""
+    },
+    {
+      "hgNm": "강명구",
+      "vote": ""
+    },
+    {
+      "hgNm": "강민국",
+      "vote": ""
+    },
+    {
+      "hgNm": "강선영",
+      "vote": ""
+    },
+    {
+      "hgNm": "강승규",
+      "vote": ""
+    },
+    {
+      "hgNm": "강유정",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "고동진",
+      "vote": ""
+    },
+    {
+      "hgNm": "고민정",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "곽규택",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "구자근",
+      "vote": ""
+    },
+    {
+      "hgNm": "권성동",
+      "vote": ""
+    },
+    {
+      "hgNm": "권영세",
+      "vote": ""
+    },
+    {
+      "hgNm": "권영진",
+      "vote": ""
+    },
+    {
+      "hgNm": "권칠승",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김건",
+      "vote": ""
+    },
+    {
+      "hgNm": "김기웅",
+      "vote": ""
+    },
+    {
+      "hgNm": "김기현",
+      "vote": ""
+    },
+    {
+      "hgNm": "김대식",
+      "vote": ""
+    },
+    {
+      "hgNm": "김도읍",
+      "vote": ""
+    },
+    {
+      "hgNm": "김문수",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김미애",
+      "vote": ""
+    },
+    {
+      "hgNm": "김민전",
+      "vote": ""
+    },
+    {
+      "hgNm": "김병기",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김상욱",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김상훈",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김석기",
+      "vote": ""
+    },
+    {
+      "hgNm": "김선교",
+      "vote": ""
+    },
+    {
+      "hgNm": "김성원",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김성환",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김소희",
+      "vote": ""
+    },
+    {
+      "hgNm": "김승수",
+      "vote": ""
+    },
+    {
+      "hgNm": "김승원",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김영호",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김영환",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김예지",
+      "vote": ""
+    },
+    {
+      "hgNm": "김용민",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김용태",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김원이",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김위상",
+      "vote": ""
+    },
+    {
+      "hgNm": "김은혜",
+      "vote": ""
+    },
+    {
+      "hgNm": "김장겸",
+      "vote": ""
+    },
+    {
+      "hgNm": "김재섭",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김정제",
+      "vote": ""
+    },
+    {
+      "hgNm": "김종양",
+      "vote": ""
+    },
+    {
+      "hgNm": "김준혁",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김태년",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김태선",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김태호",
+      "vote": ""
+    },
+    {
+      "hgNm": "김한규",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김형동",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "김희정",
+      "vote": ""
+    },
+    {
+      "hgNm": "나경원",
+      "vote": ""
+    },
+    {
+      "hgNm": "모경종",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "문대림",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박대출",
+      "vote": ""
+    },
+    {
+      "hgNm": "박덕흠",
+      "vote": ""
+    },
+    {
+      "hgNm": "박상웅",
+      "vote": ""
+    },
+    {
+      "hgNm": "박성민",
+      "vote": ""
+    },
+    {
+      "hgNm": "박성훈",
+      "vote": ""
+    },
+    {
+      "hgNm": "박수민",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박수영",
+      "vote": ""
+    },
+    {
+      "hgNm": "박정하",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박정훈",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박준태",
+      "vote": ""
+    },
+    {
+      "hgNm": "박지원",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박충권",
+      "vote": ""
+    },
+    {
+      "hgNm": "박해철",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "박형수",
+      "vote": ""
+    },
+    {
+      "hgNm": "배준영",
+      "vote": ""
+    },
+    {
+      "hgNm": "배현진",
+      "vote": ""
+    },
+    {
+      "hgNm": "백종헌",
+      "vote": ""
+    },
+    {
+      "hgNm": "서명옥",
+      "vote": ""
+    },
+    {
+      "hgNm": "서범수",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "서일준",
+      "vote": ""
+    },
+    {
+      "hgNm": "서지영",
+      "vote": ""
+    },
+    {
+      "hgNm": "서천호",
+      "vote": ""
+    },
+    {
+      "hgNm": "성일종",
+      "vote": ""
+    },
+    {
+      "hgNm": "송석준",
+      "vote": ""
+    },
+    {
+      "hgNm": "송언석",
+      "vote": ""
+    },
+    {
+      "hgNm": "송옥주",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "신동욱",
+      "vote": ""
+    },
+    {
+      "hgNm": "신성범",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "신영대",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "안규백",
+      "vote": ""
+    },
+    {
+      "hgNm": "안상훈",
+      "vote": ""
+    },
+    {
+      "hgNm": "안철수",
+      "vote": ""
+    },
+    {
+      "hgNm": "안호영",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "엄태영",
+      "vote": ""
+    },
+    {
+      "hgNm": "오세희",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "우재준",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "위성락",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "유동수",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "유상범",
+      "vote": ""
+    },
+    {
+      "hgNm": "??하",
+      "vote": ""
+    },
+    {
+      "hgNm": "유용원",
+      "vote": ""
+    },
+    {
+      "hgNm": "윤상현",
+      "vote": ""
+    },
+    {
+      "hgNm": "윤영석",
+      "vote": ""
+    },
+    {
+      "hgNm": "윤재옥",
+      "vote": ""
+    },
+    {
+      "hgNm": "윤종군",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "윤준병",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "윤한홍",
+      "vote": ""
+    },
+    {
+      "hgNm": "이강일",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이기헌",
+      "vote": ""
+    },
+    {
+      "hgNm": "이달희",
+      "vote": ""
+    },
+    {
+      "hgNm": "이만희",
+      "vote": ""
+    },
+    {
+      "hgNm": "이상휘",
+      "vote": ""
+    },
+    {
+      "hgNm": "이성권",
+      "vote": ""
+    },
+    {
+      "hgNm": "이양수",
+      "vote": ""
+    },
+    {
+      "hgNm": "이연희",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이인선",
+      "vote": ""
+    },
+    {
+      "hgNm": "이인영",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이정문",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이정헌",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이종배",
+      "vote": ""
+    },
+    {
+      "hgNm": "이종욱",
+      "vote": ""
+    },
+    {
+      "hgNm": "이철규",
+      "vote": ""
+    },
+    {
+      "hgNm": "이해식",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "이??",
+      "vote": ""
+    },
+    {
+      "hgNm": "이훈기",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "인요한",
+      "vote": ""
+    },
+    {
+      "hgNm": "임이자",
+      "vote": ""
+    },
+    {
+      "hgNm": "임종득",
+      "vote": ""
+    },
+    {
+      "hgNm": "임호선",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "장경태",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "장동혁",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "장종태",
+      "vote": ""
+    },
+    {
+      "hgNm": "정동만",
+      "vote": ""
+    },
+    {
+      "hgNm": "정동영",
+      "vote": ""
+    },
+    {
+      "hgNm": "정성국",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "정연욱",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "정점식",
+      "vote": ""
+    },
+    {
+      "hgNm": "정희용",
+      "vote": ""
+    },
+    {
+      "hgNm": "조경태",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "조배숙",
+      "vote": ""
+    },
+    {
+      "hgNm": "조승환",
+      "vote": ""
+    },
+    {
+      "hgNm": "조은희",
+      "vote": ""
+    },
+    {
+      "hgNm": "조인철",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "조정식",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "조정훈",
+      "vote": ""
+    },
+    {
+      "hgNm": "조지연",
+      "vote": ""
+    },
+    {
+      "hgNm": "주진우",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "주호영",
+      "vote": ""
+    },
+    {
+      "hgNm": "진종오",
+      "vote": ""
+    },
+    {
+      "hgNm": "최민희",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "최보윤",
+      "vote": ""
+    },
+    {
+      "hgNm": "최수진",
+      "vote": ""
+    },
+    {
+      "hgNm": "최은석",
+      "vote": ""
+    },
+    {
+      "hgNm": "최형두",
+      "vote": ""
+    },
+    {
+      "hgNm": "추경호",
+      "vote": ""
+    },
+    {
+      "hgNm": "추미애",
+      "vote": ""
+    },
+    {
+      "hgNm": "한기오",
+      "vote": ""
+    },
+    {
+      "hgNm": "한지아",
+      "vote": "agree"
+    },
+    {
+      "hgNm": "홍기원",
+      "vote": "agree"
+    }
+  ]
+}

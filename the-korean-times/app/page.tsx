@@ -1,15 +1,13 @@
-import BoardWidget from "@/components/widgets/Board";
+import ContentHeader from "@/components/layout/ContentHeader";
+import VoteBoard from "@/components/VoteBoard";
 
-import members from "@/public/national-assembly-members.json";
+import voteData from "@/public/241203_martial_law_clear.json";
 
 export default function Home() {
-  if (!members) {
-    return;
-  }
-
   return (
-    <div>
-      <BoardWidget members={members} />
-    </div>
+    <>
+      <ContentHeader>fdfa</ContentHeader>
+      <VoteBoard voteData={voteData} />
+    </>
   );
 }
