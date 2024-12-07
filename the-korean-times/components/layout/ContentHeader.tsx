@@ -7,7 +7,7 @@ export default function ContentHeader({
 }) {
   return (
     <div
-      className="flex flex-col justify-center items-center text-xl text-white bg-foreground py-4"
+      className="4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-xl text-white"
       style={{
         background: "var(--bg-gradient-navbar)",
         backgroundImage: bgImg ? `url(${bgImg})` : undefined,

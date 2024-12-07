@@ -50,7 +50,6 @@ export type VoteData2 = {
   agenda: string;
   date: string;
   stats: VoteStats;
-  attend: number;
   dataset: VoteDataItem[];
 };
 export type VoteStats = {

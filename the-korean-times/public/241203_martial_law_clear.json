@@ -1,8 +1,14 @@
 {
   "agenda": "계엄령 해제 요구 결의안",
   "date": "2024-12-03 00:00:00",
-  "total": 300,
-  "attend": 190,
+  "stats": {
+    "total": 300,
+    "attend": 190,
+    "agree": 100,
+    "disagree": 0,
+    "abstain": 0,
+    "absent": 0
+  },
   "dataset": [
     {
       "hgNm": "강대식",

@@ -33,17 +33,17 @@ const Container = styled.li<{
   gap: 0.5rem;
   color: ${({ vote }) =>
     vote === "agree"
-      ? "var(--positive)"
+      ? "var(--agree)"
       : vote === "disagree"
-      ? "var(--negative)"
+      ? "var(--disagree)"
       : "var(--neutral)"};
   &:hover {
     background-color: ${({ vote }) =>
       vote === "agree"
-        ? "rgba(6, 254, 67, 0.1)" /* --positive에 약간 투명 */
+        ? "rgba(6, 254, 67, 0.1)"
         : vote === "disagree"
-        ? "rgba(228, 80, 114, 0.1)" /* --negative에 약간 투명 */
-        : "rgba(240, 240, 240, 0.3)"}; /* --neutral에 약간 투명 */
+        ? "rgba(228, 80, 114, 0.1)"
+        : "rgba(240, 240, 240, 0.3)"};
   }
 `;
 const Marker = styled.div<{ vote?: string }>`
@@ -51,9 +51,9 @@ const Marker = styled.div<{ vote?: string }>`
   height: 10px;
   background-color: ${({ vote }) =>
     vote === "agree"
-      ? "var(--positive)"
+      ? "var(--agree)"
       : vote === "disagree"
-      ? "var(--negative)"
+      ? "var(--disagree)"
       : "var(--neutral)"};
   border-radius: 50%;
   flex-shrink: 0;

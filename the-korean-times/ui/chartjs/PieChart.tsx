@@ -9,13 +9,19 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 export default function ChartJsPieChart({
   labels = tempLabels,
   datasets = tempDatasets,
+  width,
+  height,
 }: ChartJsPieChartProps) {
   const data = {
     labels,
     datasets,
   };
 
-  return <Pie data={data} options={options} />;
+  return (
+    <div style={{ width, height }}>
+      <Pie data={data} options={options} />;
+    </div>
+  );
 }
 
 const options = {
@@ -34,6 +40,8 @@ const options = {
 type ChartJsPieChartProps = {
   labels?: string[];
   datasets?: dataset[];
+  width?: string;
+  height?: string;
 };
 type dataset = {
   data: number[];

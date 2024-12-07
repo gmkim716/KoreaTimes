@@ -12,31 +12,14 @@ type VoteProps = {
   voteData: VoteData;
 };
 
-export default function YnVote({ agenda = tempAgenda, voteData }: VoteProps) {
+export default function YnVote({
+  agenda = "비상계엄 해제 요구 결의안",
+  voteData,
+}: VoteProps) {
   return (
-    <div style={styles.container}>
-      <h3 style={styles.agenda}>{agenda}</h3>
+    <div className="w-full max-w-[600px] mx-auto p-4 border border-gray-300 rounded-lg bg-gray-100">
+      <h3 className="mb-3 text-lg font-bold text-center">{agenda}</h3>
       <YnGraph dataset={voteData} />
     </div>
   );
 }
-
-const styles = {
-  container: {
-    width: "100%",
-    maxWidth: "600px",
-    margin: "0 auto",
-    padding: "16px",
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    backgroundColor: "#f9f9f9",
-  },
-  agenda: {
-    marginBottom: "12px",
-    fontSize: "18px",
-    fontWeight: "bold",
-    textAlign: "center" as const,
-  },
-};
-
-const tempAgenda = "비상계엄 해제 요구 결의안";

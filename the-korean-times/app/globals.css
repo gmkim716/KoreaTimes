@@ -8,9 +8,9 @@
 
   /* 국회 전광판 */
   --vote-board-background-color: #1d1e17;
-  --vote-board-border-color: #3d384d;
-  --positive: #06fe43;
-  --negative: #e45072;
+  --vote-board-border-color: #6a4e1d;
+  --agree: #06fe43;
+  --disagree: #e45072;
   --neutral: #f0f0f0;
   --abstension: #fff907;
 

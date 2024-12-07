@@ -1,6 +1,10 @@
 import { VoteData2, VoteDataItem } from "@/types/types";
 import MemberItem from "./VoteBoard/MemberItem";
 
+type VoteBoardProps = {
+  voteData: VoteData2;
+};
+
 /**
  * 국회 전광판을 모티브로 한 컴포넌트
  *
@@ -9,12 +13,7 @@ import MemberItem from "./VoteBoard/MemberItem";
  */
 
 export default function VoteBoard({ voteData }: VoteBoardProps) {
-  const {
-    agenda = "",
-    date = "",
-    stats = { total: 0, attend: 0, agree: 0, disagree: 0, abstention: 0 },
-    dataset = [],
-  } = voteData;
+  const { agenda, date, stats, dataset } = voteData;
 
   return (
     <VoteBoard.Container>
@@ -39,35 +38,6 @@ const Agenda = ({ text, time }: { text: string; time?: string }) => {
     </h1>
   );
 };
-
-const Stats = ({ stats }: StatsProps) => {
-  const { total, attend, agree, disagree, abstention } = stats;
-  return (
-    <ul className="grid grid-cols-5 gap-4 p-4 list-none border-4 border-[var(--vote-board-border-color)] text-center text-2xl">
-      <StatsItem value={total} />
-      <StatsItem value={attend} />
-      <StatsItem value={agree} />
-      <StatsItem value={disagree} />
-      <StatsItem value={abstention} />
-    </ul>
-  );
-};
-const StatsItem = ({ value }: { value: number }) => {
-  return <li>{value} 인</li>;
-};
-const MemberList = ({ dataset }: { dataset: VoteDataItem[] }) => {
-  return (
-    <ul className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
-      {dataset.map((member: VoteDataItem) => (
-        <MemberItem key={member.hgNm} hgNm={member.hgNm} vote={member.vote} />
-      ))}
-    </ul>
-  );
-};
-
-type VoteBoardProps = {
-  voteData: VoteData2;
-};
 type StatsProps = {
   stats: {
     total: number;
@@ -76,6 +46,27 @@ type StatsProps = {
     disagree: number;
     abstention: number;
   };
+};
+const Stats = ({ stats }: StatsProps) => {
+  const { total, attend, agree, disagree, abstention } = stats;
+  return (
+    <ul className="grid grid-cols-5 gap-4 list-none border-4 border-[var(--vote-board-border-color)] text-center text-2xl divide-x-4 divide-[var(--vote-board-border-color)]">
+      <li className="p-4">재석: {total} 인</li>
+      <li className="p-4">재석: {attend} 인</li>
+      <li className="p-4 text-[var(--agree)]">찬성: {agree} 인</li>
+      <li className="p-4 text-[var(--disagree)]">반대: {disagree} 인</li>
+      <li className="p-4 text-[var(--abstension)]">기권: {abstention} 인</li>
+    </ul>
+  );
+};
+const MemberList = ({ dataset }: { dataset: VoteDataItem[] }) => {
+  return (
+    <ul className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-4 cursor-pointer">
+      {dataset.map((member: VoteDataItem) => (
+        <MemberItem key={member.hgNm} hgNm={member.hgNm} vote={member.vote} />
+      ))}
+    </ul>
+  );
 };
 
 VoteBoard.Container = Container;
